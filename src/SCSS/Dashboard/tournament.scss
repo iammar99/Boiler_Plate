@@ -1,0 +1,106 @@
+// ---------------------------------- Button ----------------------------------
+
+
+// Define variables
+$blue-primary: #193f80;
+$red-primary: #c32222; // New red color for delete button
+$red-hover: #e52c2c;
+$purple-primary: #5350c6;
+$text-light: #d8e5f9;
+$text-red-hover: #ffcaca; // New hover text color for delete
+$text-purple-hover: #b3aaee;
+
+// Main container
+.download-view-container {
+  display: flex;
+  flex-direction: column;
+  background-color: $blue-primary;
+  width: fit-content;
+  padding: 0.4rem; // Slightly reduced padding
+  border-radius: 1.25rem; // Slightly reduced border radius
+  gap: 0.2rem; // Reduced gap
+  margin: auto;
+  
+  a {
+    text-decoration: none;
+    font-size: 0.9rem; // Smaller font size
+  }
+  
+  a:hover:after {
+    width: 0%;
+  }
+  
+  // Delete button (formerly Download)
+  .delete-btn {
+    background-color: $red-primary;
+    padding: 0.4rem 1.2rem; // Reduced padding
+    border-radius: 0.8rem; // Reduced border radius
+    border-bottom-left-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    transition: all 0.3s ease;
+    text-align: center;
+    color: $text-light;
+    font-weight: 500;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: $red-hover;
+      transform: scale(1.06) translateY(-3px); // Slightly reduced scale/translate
+      border-radius: 1.2rem;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      color: $text-red-hover;
+    }
+  }
+  
+  // View Page button
+  .view-btn {
+    width: auto;
+    background-color: $purple-primary;
+    padding: 0.4rem 1.2rem; // Reduced padding
+    border-radius: 0.8rem; // Reduced border radius
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+    transition: all 0.3s ease;
+    text-align: center;
+    color: $text-light;
+    font-weight: 500;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: darken($purple-primary, 5%);
+      transform: scale(1.05) translateY(3px); // Slightly reduced scale/translate
+      border-radius: 1.2rem;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      color: $text-purple-hover;
+    }
+}
+}
+
+
+
+
+
+// ---------------------------------- Table ----------------------------------
+
+table.tournaments{
+
+  td, th {
+    border: 1px solid black;
+    height: 50px;
+    text-align: center;
+    padding: 25px 0px;
+  }
+}
+
+
+
+@media screen and (max-width:675px) {
+    tr{
+        height: 341px;
+    }
+    .download-view-container{
+        margin: 0;
+    }
+}

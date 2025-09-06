@@ -1,6 +1,40 @@
+// -------------- Varaibles --------------
+$bgColor:#E8F5E9;
+$textColor:#8b8b8b;
 // -------------- Components --------------
 @import './SCSS/Components/bootstrap';
 @import './SCSS/Components/ScreenLoader';
-// -------------- Auth --------------
-// -------------- Dashboard --------------
+@import './SCSS/Components/carusal.scss';
+@import './SCSS/Components/header.scss';
+@import './SCSS/Components/footer.scss';
+@import './SCSS/Components/btnSpinner.scss';
+@import './SCSS/Components/noTournament.scss';
+@import './SCSS/Components/card.scss';
+@import './SCSS/Components/ballLoader.scss';
+@import './SCSS/Components/matchBox.scss';
+@import './SCSS/Components/resultModal.scss';
 // -------------- Frontend --------------
+@import './SCSS/Frontend/home.scss';
+// -------------- Auth --------------
+@import './SCSS/Auth/auth.scss';
+// -------------- Dashboard --------------
+@import './SCSS/Dashboard/create.scss';
+@import './SCSS/Dashboard/tournament.scss';
+@import './SCSS/Dashboard/tournamentPage.scss';
+
+
+#root{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+main{
+    flex: 1 0 auto;
+}
+
+
+::-webkit-scrollbar{
+    display: none;
+}

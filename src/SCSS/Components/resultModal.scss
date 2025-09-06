@@ -1,0 +1,75 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 340px;
+    input{
+      height: 35px;
+      margin: 5px 0px;
+    }
+    input:focus{
+      border-color: black;
+      outline: 0px;
+    }
+  }
+  
+  button {
+    margin: 10px;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: #45a049;
+    }
+  }
+ 
+  
+
+  .score {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0px;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+input.wickets {
+  width: 36px;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+input.score {
+  width: 55px;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+input.overs{
+  width: 40px;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+label {
+  font-size: 12px;
+}

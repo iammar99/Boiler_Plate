@@ -10,7 +10,7 @@ function App() {
 
   setTimeout(()=>{
     setIsAppLoading(false)
-  },1000)
+  },0)
 
 
   
